@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Policy
 {
    // Variables
@@ -173,57 +171,6 @@ public class Policy
    return price;
    
  }
- 
- // Main Method
-    public static void main(String[] args)
-    {
-        Scanner in = new Scanner(System.in);
-
-        System.out.print("Enter the Policy Number: ");
-        int policyNumber = in.nextInt();
-        in.nextLine(); 
-
-        System.out.print("Enter the Provider Name: ");
-        String providerName = in.nextLine();
-
-        System.out.print("Enter the Policyholder's First Name: ");
-        String firstName = in.nextLine();
-
-        System.out.print("Enter the Policyholder's Last Name: ");
-        String lastName = in.nextLine();
-
-        System.out.print("Enter the Policyholder's Age: ");
-        int age = in.nextInt();
-        in.nextLine(); 
-
-        System.out.print("Enter the Policyholder's Smoking Status (smoker/non-smoker): ");
-        String smokingStatus = in.nextLine();
-
-        System.out.print("Enter the Policyholder's Height (in inches): ");
-        double height = in.nextDouble();
-
-        System.out.print("Enter the Policyholder's Weight (in pounds): ");
-        double weight = in.nextDouble();
-
-       
-        Policy policy = new Policy(policyNumber, providerName, firstName, lastName,
-                                   age, smokingStatus, height, weight);
-
-        
-        System.out.println("----------------------------------------------------------------------------------------------------");
-        System.out.println("Policy Details");
-        System.out.println("Policy Number: " + policy.getpolicyNumber());
-        System.out.println("Provider Name: " + policy.getproviderName());
-        System.out.println("Policyholder Name: " + policy.getpolicyholderFirstName() + " " + policy.getpolicyholderLastName());
-        System.out.println("Age: " + policy.getpolicyholderAge());
-        System.out.println("Smoking Status: " + policy.getpolicyholderSmokingStatus());
-        System.out.println("Height (in): " + policy.getpolicyholderHeight());
-        System.out.println("Weight (lb): " + policy.getpolicyholderWeight());
-        System.out.printf("BMI: %.2f%n", policy.getBMI());
-        System.out.printf("Policy Price: $%.2f%n", policy.getpolicyPrice());
-
-        in.close();
-    }
 }
       
   
