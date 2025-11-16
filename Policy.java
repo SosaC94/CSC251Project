@@ -11,6 +11,7 @@ public class Policy
    private double policyholderWeight;
    
    // No-Arg Constructor
+   
   public Policy() 
   {
    policyNumber = 0;
@@ -24,6 +25,15 @@ public class Policy
   }
   
   // Constructor
+  //  @param policyNumberA The policy number.
+  //  @param providerNameA The provider/company name.
+  //  @param firstNameA The policyholder's first name.
+  //  @param lastNameA The policyholder's last name.
+  //  @param ageA The policyholder's age.
+  //  @param smokingStatusA The policyholder's smoking status.
+  //  @param heightA The policyholder's height (in inches).
+  //  @param weightA The policyholder's weight (in pounds).
+   
   public Policy(int policyNumberA, String providerNameA, String firstNameA, String lastNameA, int ageA, String smokingStatusA, double heightA, double weightA)
   {
    policyNumber = policyNumberA;
@@ -39,11 +49,15 @@ public class Policy
   // Setters and Getters
   
   // Policy Number
+  // @param value The policy number
+  
   public void setPolicyNumber(int value)
   {
    policyNumber = value;
   }
- 
+  
+  // @return The policy number
+  
   public int getpolicyNumber()
   {
    return policyNumber;
@@ -52,10 +66,13 @@ public class Policy
   
   
   // Provider Name
+  // @param value The provider name
   public void setProviderName(String value)
   {
    providerName = value;
   }
+  
+  // @return The provider name
   
   public String getproviderName()
   {
@@ -63,10 +80,13 @@ public class Policy
   }
   
   // Policy Holder First Name
+  // @param value The policy holder first name
   public void setpolicyholderFirstName(String value)
   {
    policyholderFirstName = value;
   } 
+  
+  //@return The policy holder first name
   
   public String getpolicyholderFirstName()
   {
@@ -74,10 +94,13 @@ public class Policy
   }
   
   // Policy Holder Last Name
+  // @param value The policy holder last name
   public void setpolicyholderLastName(String value)
   {
    policyholderLastName = value;
-  } 
+  }
+  
+  // @return The policy holder last name 
   
   public String getpolicyholderLastName()
   {
@@ -85,10 +108,13 @@ public class Policy
   }
   
   // Policy Holder Age
+  // @param value Policy holder age
   public void setpolicyholderAge(int value)
   {
    policyholderAge = value;
   } 
+  
+  // @return Policy Holder Age
   
   public int getpolicyholderAge()
   {
@@ -96,10 +122,13 @@ public class Policy
   }
   
   // Policy Holder Smoking Status
+  // @param value Policy holder smoking status
   public void setpolicyholderSmokingStatus(String value)
   {
    policyholderSmokingStatus = value;
   } 
+  
+  // @return Policy holder smoking status
   
   public String getpolicyholderSmokingStatus()
   {
@@ -107,10 +136,13 @@ public class Policy
   }
   
   // Policy Holder Height
+  // @param value The policy holder height
   public void setpolicyholderHeight(int value)
   {
    policyholderHeight = value;
   } 
+  
+  // @return policy holder height
   
   public double getpolicyholderHeight()
   {
@@ -118,10 +150,13 @@ public class Policy
   }
   
   // Policy Holder Weight
+  // @param The policy holder weight
   public void setpolicyholderWeight(int value)
   {
    policyholderWeight = value;
   } 
+  
+  // @ return The policy holder weight
   
   public double getpolicyholderWeight()
   {
@@ -129,6 +164,7 @@ public class Policy
   }
   
  // Get BMI
+ // @return Policy Holder BMI or 0 if height is invalid.
  
  public double getBMI()
  {
@@ -137,6 +173,8 @@ public class Policy
  }
  
  //Policy Price
+ // @return The policy price
+ 
  public double getpolicyPrice()
  {
    double price = 600.00;
